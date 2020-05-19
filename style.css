@@ -1,41 +1,98 @@
-@media (min-width:320px) { 
+/* Изменение размера текста */
+
+@media (min-width: 320px) {
   .wrap {
     font-size: 12px;
   }
 }
 
-@media (min-width:480px) {
+@media (min-width: 480px) {
   .wrap {
     font-size: 16px;
   }
 }
 
-@media (min-width:640px) {
+@media (min-width: 640px) {
   .wrap {
     font-size: 20px;
   }
 }
 
-@media (min-width:768px) {
+ @media (min-width: 768px) {
   .wrap {
     font-size: 24px;
   }
 }
 
-@media (min-width:960px) {
+@media (min-width: 960px) {
   .wrap {
     font-size: 28px;
   }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .wrap {
     font-size: 32px;
   }
 }
 
-@media (min-width:1280px) {
+@media (min-width: 1280px) {
   .wrap {
     font-size: 36px;
+  }
+}
+
+/* Меню */
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navigation a {
+  color: #a66200;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation a:hover {
+  background-color: #ffb140;
+}
+
+.wrap {
+  margin-top: 20px;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    display: none;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
   }
 }
